@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="personListView" layoutY="62.0" prefHeight="234.0" prefWidth="600.0" />
+      <Button fx:id="add" layoutX="28.0" layoutY="345.0" mnemonicParsing="false" onAction="#addFunc" text="Add" />
+      <Button fx:id="edit" layoutX="79.0" layoutY="345.0" mnemonicParsing="false" onAction="#editFunc" text="Edit" />
+      <Button fx:id="delete" layoutX="128.0" layoutY="345.0" mnemonicParsing="false" onAction="#deleteFunc" text="Delete" />
+      <Button layoutX="527.0" layoutY="22.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <TextField fx:id="searchbar" layoutX="143.0" layoutY="22.0" prefHeight="25.0" prefWidth="372.0" />
+      <Text layoutX="5.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by Lastname">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="notfound" layoutX="198.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No people found" visible="false">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="fetchText" layoutX="186.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="396.396484375" />
+      <Button fx:id="first" layoutX="167.0" layoutY="303.0" mnemonicParsing="false" onAction="#getFirstPull" text="First" />
+      <Button fx:id="prev" layoutX="234.0" layoutY="303.0" mnemonicParsing="false" onAction="#getPrev" text="Prev" />
+      <Button fx:id="next" layoutX="281.0" layoutY="303.0" mnemonicParsing="false" onAction="#getNext" text="Next" />
+      <Button fx:id="last" layoutX="347.0" layoutY="303.0" mnemonicParsing="false" onAction="#getLast" text="Last" />
+   </children>
+</AnchorPane>

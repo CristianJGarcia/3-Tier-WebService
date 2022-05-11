@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/people",
+    "headers" : {
+      "Authorization" : {
+        "contains" : "i am a session token"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": "[{\"id\":1,\"firstName\":\"Wayne\", \"lastName\":\"Smith\", \"dateOfBirth\":\"1996-07-24\", \"age\":\"24\" },{\"id\":2,\"firstName\":\"Chaw\", \"lastName\":\"Harriet\" , \"dateOfBirth\":\"1992-03-29\", \"age\":\"28\"},{\"id\":3,\"firstName\":\"Arthur\", \"lastName\":\"Morgan\", \"dateOfBirth\":\"2000-03-23\", \"age\":\"20\"}]",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
